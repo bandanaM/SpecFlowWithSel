@@ -1,5 +1,5 @@
-﻿Feature: TestCase2
-@SmokeTest
+﻿Feature: Validate Error in Login Page
+
 Scenario: validate Error in Login Page
 	Given I enter url on Browser
 	Then I enter UserName on username field
