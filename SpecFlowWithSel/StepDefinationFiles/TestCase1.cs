@@ -39,7 +39,7 @@ namespace SpecFlowWithSel.StepDefinationFiles
             driver.FindElement(By.Id("txtPassword")).SendKeys((String)data.Password);
         }
 
-        [Then(@"I select Domain  from domain dropdown")]
+        [Then(@"I select Domain from domain dropdown")]
         public void ThenISelectDomainFromDomainDropdown(Table table)
         {
             dynamic data = table.CreateDynamicInstance();
@@ -61,6 +61,12 @@ namespace SpecFlowWithSel.StepDefinationFiles
 
 
          }
+        [Then(@"verify Login Error Message")]
+        public void ThenVerifyLoginErrorMessage()
+        {
+            var element = driver.FindElement(By.Id("lblMsg"));
+            Assert.That(element.Text, Is.Not.Null, "Header Text is not Found");
 
-       }
+        }
+    }
     }

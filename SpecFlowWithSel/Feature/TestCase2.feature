@@ -1,15 +1,15 @@
 ﻿Feature: Validate Error in Login Page
 
 Scenario: validate Error in Login Page
-	Given I enter url on Browser
-	Then I enter UserName on username field
+	Given I enter url in Browser
+	Then I enter UserName in username field
 	| UserName  |
 	| bandana.m |
-	Then I enter Password on password field
+	Then I enter Password in password field
 	| Password  |
 	| Ganesh@23 |
-    Then I select Domain  from domain dropdown in myHcl login Page
+     Then I select Domain from domain dropdown
 	| Domain  |
 	| HCLTECH |
-	Then Click Login button
+	Then Click submit button
 	Then verify Login Error Message

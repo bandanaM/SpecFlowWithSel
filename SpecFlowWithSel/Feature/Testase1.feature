@@ -8,7 +8,7 @@ Scenario: validate Login Page
 	Then I enter Password in password field
 	| Password  |
 	| Ganesh@04 |
-    Then I select Domain  from domain dropdown
+    Then I select Domain from domain dropdown
 	| Domain  |
 	| HCLTECH |
 	Then Click submit button
